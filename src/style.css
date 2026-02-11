@@ -147,7 +147,7 @@ header {
   padding: 10px;
 }
 
-.img-1 {
+.header-img-1 {
   grid-column: 1/2;
   width: 45px;
   height: 45px;
@@ -155,7 +155,7 @@ header {
   justify-self: end;
 }
 
-.img-2 {
+.header-img-2 {
   grid-column: 2/3;
   width: 45px;
   height: 45px;
@@ -163,7 +163,7 @@ header {
   justify-self: center;
 }
 
-.img-3 {
+.header-img-3 {
   grid-column: 3/4;
   width: 45px;
   height: 45px;
@@ -323,38 +323,56 @@ main {
   padding-bottom: 20px;
 }
 
-.img-1 {
+.footer-img-1 {
   grid-column: 1/2;
   grid-row: 7/8;
   justify-self: end;
+  width: 45px;
+  height: 45px;
 }
 
-.img-2 {
+.footer-img-2 {
   grid-column: 2/3;
   grid-row: 7/8;
+  width: 45px;
+  height: 45px;
+  justify-self: center;
 }
 
-.img-3 {
+.footer-img-3 {
   grid-column: 3/4;
   grid-row: 7/8;
+  width: 45px;
+  height: 45px;
+
 }
 
-.img-4 {
+.footer-img-4 {
   grid-column: 1/4;
   padding-top: 80px;
 } 
 
 
 
-/* EN QUE ME QUEDE:  hacer el grid https://www.youtube.com/watch?v=hPd93mijFCM
+/* EN QUE ME QUEDE: */
 
 
-/* @media (500px <= width <= 1000px) {
-  body {
-    background-color: yellow;
+@media (500px <= width <= 1000px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+  }
+
+  .image-header {
+    grid-row: 1/2;
+  }
+
+  .text-header {
+    grid-row: 2/3;
   }
 }
 
+/*
 @media (width > 1000px) {
   body {
     background-color: lightgray;
